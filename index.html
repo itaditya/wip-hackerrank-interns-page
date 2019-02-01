@@ -29,18 +29,24 @@
             class="intern-code-container language-json"
           ><code class="intern-code js-intern-code language-json"><span class="token punctuation">{</span>
     <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string js-intern-name">""</span><span class="token punctuation">,</span>
-    <span class="token property">"linkedin"</span><span class="token operator">:</span> <span class="token string">"<a class="token url js-intern-linkedin" href="" target="_blank"></a>"</span>
+    <span class="token property">"linkedin"</span><span class="token operator">:</span> <span class="token string">"<a class="token url js-intern-linkedin" href="" target="_blank"></a>",</span></span>
+    <span class="token property">"phrase"</span><span class="token operator">:</span> <span class="token string js-intern-phrase">""</span><span
+      class="token punctuation">,</span>
 <span class="token punctuation">}</span></code></pre>
         </main>
       </section>
       <section class="interns-section js-interns-section">
+        <div class="intern" data-name="progyan" tabindex="0">
+          <img src="images/akshay_down.png" alt="" class="hooded-image" />
+          <img src="images/akshay_up.png" alt="" class="face-image" />
+        </div>
         <div class="intern" data-name="aditya" tabindex="0">
           <img src="images/akshay_down.png" alt="" class="hooded-image" />
           <img src="images/akshay_up.png" alt="" class="face-image" />
         </div>
         <div class="intern" data-name="akshay" tabindex="0">
-          <img src="images/sourav_down.png" alt="" class="hooded-image" />
-          <img src="images/sourav_up.png" alt="" class="face-image" />
+          <img src="images/akshay_down.png" alt="" class="hooded-image" />
+          <img src="images/akshay_up.png" alt="" class="face-image" />
         </div>
         <div class="intern" data-name="aaqa" tabindex="0">
           <img src="images/harshith_down.png" alt="" class="hooded-image" />
@@ -58,27 +64,23 @@
           <img src="images/akshay_down.png" alt="" class="hooded-image" />
           <img src="images/akshay_up.png" alt="" class="face-image" />
         </div>
-        <div class="intern" data-name="sourav" tabindex="0">
-          <img src="images/sourav_down.png" alt="" class="hooded-image" />
-          <img src="images/sourav_up.png" alt="" class="face-image" />
+        <div class="intern" data-name="saurav" tabindex="0">
+          <img src="images/saurav_down.png" alt="" class="hooded-image" />
+          <img src="images/saurav_up.png" alt="" class="face-image" />
         </div>
         <div class="intern" data-name="harshith" tabindex="0">
           <img src="images/harshith_down.png" alt="" class="hooded-image" />
           <img src="images/harshith_up.png" alt="" class="face-image" />
         </div>
         <div class="intern" data-name="virali" tabindex="0">
-          <img src="images/sourav_down.png" alt="" class="hooded-image" />
-          <img src="images/sourav_up.png" alt="" class="face-image" />
-        </div>
-        <div class="intern" data-name="progyan" tabindex="0">
-          <img src="images/akshay_down.png" alt="" class="hooded-image" />
-          <img src="images/akshay_up.png" alt="" class="face-image" />
+          <img src="images/aditi_down.png" alt="" class="hooded-image" />
+          <img src="images/aditi_up.png" alt="" class="face-image" />
         </div>
         <div class="intern" data-name="aditi" tabindex="0">
           <img src="images/aditi_down.png" alt="" class="hooded-image" />
           <img src="images/aditi_up.png" alt="" class="face-image" />
         </div>
-        <div class="intern" data-name="harshit" tabindex="0">
+        <div class="intern" data-name="nimesh" tabindex="0">
           <img src="images/akshay_down.png" alt="" class="hooded-image" />
           <img src="images/akshay_up.png" alt="" class="face-image" />
         </div>
@@ -95,51 +97,73 @@
 
       const internNameElem = document.querySelector('.js-intern-name');
       const internLinkedinElem = document.querySelector('.js-intern-linkedin');
+      const internPhraseElem = document.querySelector('.js-intern-phrase');
 
       const internDataMap = {
+        progyan: {
+          name: 'Progyan',
+          linkedin: 'progyan-bhattacharya',
+          phrase: 'Loves to make, Dares to break!',
+        },
         aditya: {
           name: 'Aditya Agarwal',
-          linkedin: 'itsaditya'
+          linkedin: 'itsaditya',
+          phrase: "L, do you know Gods of Death love Apples"
         },
         akshay: {
           name: 'Akshay Kumar',
-          linkedin: 'akshay'
+          linkedin: 'kakshay21',
+          phrase: "You're reading about the big daddy of Badminton"
         },
         aaqa: {
           name: 'Aaqa Ishqtaq',
-          linkedin: 'aaqa'
+          linkedin: 'aaqa',
+          phrase: 'Dobby, bring me coffee!!'
+        },
+        nimesh: {
+          name: 'Nimesh',
+          linkedin: 'devnimi',
+          phrase: "My name is Nimesh Jain and I'm not an engineer<span class='tc-askterik'>*</span>"
         },
         danish: {
           name: 'Danish',
-          linkedin: 'danish'
+          linkedin: 'danish',
+          phrase: 'Eat a Milky Bar everyday'
         },
         ashish: {
           name: 'Ashish',
-          linkedin: 'ashish'
+          linkedin: 'marshal4world',
+          phrase: 'I turn coffee into code.'
         },
         srinath: {
           name: 'Srinath',
-          linkedin: 'srinath'
+          linkedin: 'srinath',
+          phrase: 'Talking from experience- Never color your hair'
         },
         harshith: {
-          name: 'Harshith',
-          linkedin: 'harshith'
+          name: 'Harshith Mullapudi',
+          linkedin: 'harshith',
+          phrase: 'Haku Na Mata Ta'
         },
         virali: {
           name: 'Virali',
-          linkedin: 'virali'
+          linkedin: 'virali',
+          phrase: 'the coder you want to become'
         },
         aditi: {
           name: 'Aditi',
-          linkedin: 'aditi'
+          linkedin: 'aditi',
+          phrase: "I can deploy kubernetes while you're sipping coffee"
         },
-        sourav: {
-          name: 'Sourav',
-          linkedin: 'sourav'
+        saurav: {
+          name: 'Saurav',
+          linkedin: 'saurav',
+          phrase: 'I write low level code, fear me puny humans'
         },
         sangam: {
           name: 'Sangam',
-          linkedin: 'sangam'
+          linkedin: 'sangam',
+          phrase: "You don't know me"
         }
       };
 
@@ -149,10 +173,10 @@
         const internData = internDataMap[internName] || {};
         console.log(internData);
         internNameElem.innerHTML = `"${internData.name}"`;
+        internPhraseElem.innerHTML = `"${internData.phrase}"`;
         linkedinUrl = 'https://linkedin.com/in/' + internData.linkedin;
         internLinkedinElem.innerHTML = linkedinUrl;
         internLinkedinElem.href = linkedinUrl;
-
       }
 
       internsSectionElem.addEventListener('click', handleClick);
